@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #edddb4, #f4cb88);
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Contact Page Header */
+.contact-header {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeInFromTop 1.2s ease-in-out; /* Apply same animation as in Our Cabs */
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #5e0606;
+  animation: fadeInFromTop 1.5s ease-in-out; /* Slight delay for paragraph */
+}
+
+/* Animation for Titles */
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at its original position */
+  }
+}
+
+/* Rest of the Contact Page Styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 20px;
+  background-color: white;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  padding: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-left h2, .contact-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-left .highlight {
+  color: #f9a825;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details .detail {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.facebook {
+  background-color: #4267B2;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.instagram {
+  background-color: #E1306C;
+}
+
+.get-taxi-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0e0bb7;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-right .contact-form {
+  margin-top: 20px;
+}
+
+.contact-right .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-right .form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-right .form-group input,
+.contact-right .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-right .submit-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #dca44b;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-left, .contact-right {
+    margin-bottom: 20px;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  .contact-left h2, .contact-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .get-taxi-btn {
+    width: 100%;
+  }
+
+  .contact-right .form-group input,
+  .contact-right .form-group textarea {
+    padding: 12px;
+  }
+
+  .contact-right .submit-btn {
+    width: 100%;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-header p {
+    font-size: 0.9rem;
+  }
+
+  .contact-left h2, .contact-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-left p, .contact-right p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    gap: 5px;
+  }
+
+  .get-taxi-btn {
+    padding: 8px 16px;
+  }
+
+  .contact-right .form-group input,
+  .contact-right .form-group textarea {
+    padding: 8px;
+  }
+
+  .contact-right .submit-btn {
+    padding: 8px 16px;
+  }
+}
